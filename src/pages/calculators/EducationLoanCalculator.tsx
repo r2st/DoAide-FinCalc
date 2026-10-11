@@ -31,7 +31,7 @@ export default function EducationLoanCalculator() {
         </div>
         <div>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12, marginBottom: 16 }}>
-            <ResultCard label="Monthly EMI" value={formatIndianCurrency(result.emi)} color="#F0B429" />
+            <ResultCard label="Monthly EMI" value={formatIndianCurrency(result.emi)} color="#0D9488" />
             <ResultCard label="Total Interest" value={formatIndianCurrency(result.totalInterest)} color="#4299E1" />
             <ResultCard label="Total Payment" value={formatIndianCurrency(result.totalPayment)} color="#48BB78" />
           </div>
@@ -39,7 +39,7 @@ export default function EducationLoanCalculator() {
             <ResponsiveContainer>
               <PieChart>
                 <Pie data={pieData} cx="50%" cy="50%" innerRadius={60} outerRadius={95} dataKey="value" label={({ name, percent }: any) => `${name} ${((percent ?? 0) * 100).toFixed(0)}%`}>
-                  <Cell fill="#F0B429" /><Cell fill="#4299E1" />
+                  <Cell fill="#0D9488" /><Cell fill="#4299E1" />
                 </Pie>
                 <Tooltip formatter={(v) => formatIndianCurrency(v as number)} />
               </PieChart>

@@ -31,7 +31,7 @@ export default function RetirementCalculator() {
         </div>
         <div>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12, marginBottom: 16 }}>
-            <ResultCard label="Corpus Required" value={formatIndianCurrency(result.corpusRequired)} color="#F0B429" subtitle={formatCompact(result.corpusRequired)} />
+            <ResultCard label="Corpus Required" value={formatIndianCurrency(result.corpusRequired)} color="#0D9488" subtitle={formatCompact(result.corpusRequired)} />
             <ResultCard label="Monthly Savings Needed" value={formatIndianCurrency(result.monthlySavingsNeeded)} color="#48BB78" />
           </div>
           <div style={{ height: 300 }}>
@@ -41,7 +41,7 @@ export default function RetirementCalculator() {
                 <YAxis stroke="#6b7280" fontSize={12} tickFormatter={(v) => formatCompact(v)} />
                 <Tooltip formatter={(v) => formatIndianCurrency(v as number)} contentStyle={{ background: '#111', border: '1px solid #333' }} />
                 <Legend />
-                <Line type="monotone" dataKey="corpus" name="Corpus" stroke="#F0B429" strokeWidth={2} dot={false} />
+                <Line type="monotone" dataKey="corpus" name="Corpus" stroke="#0D9488" strokeWidth={2} dot={false} />
                 <Line type="monotone" dataKey="expenses" name="Annual Expenses" stroke="#F56565" strokeWidth={2} dot={false} />
               </LineChart>
             </ResponsiveContainer>

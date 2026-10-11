@@ -33,7 +33,7 @@ export default function BlogSIP() {
       <p style={s}>Don't put all your SIPs into one type of fund. A balanced approach might look like: 60% in equity funds (mix of large-cap and mid-cap), 20% in debt funds, 10% in gold funds, and 10% in international equity. Rebalance annually. This reduces volatility while maintaining growth potential.</p>
 
       <h2 style={h2}>5. Goal-Based SIP Allocation</h2>
-      <p style={s}>Assign each SIP to a specific financial goal: child's education (15 years), house down payment (5 years), retirement (25 years). Choose fund categories based on the time horizon — aggressive equity for long-term goals, balanced or debt for short-term goals. Our <Link to="/sip-calculator" style={{ color: 'var(--gold)' }}>SIP Calculator</Link> can help you determine the right monthly amount for each goal.</p>
+      <p style={s}>Assign each SIP to a specific financial goal: child's education (15 years), house down payment (5 years), retirement (25 years). Choose fund categories based on the time horizon — aggressive equity for long-term goals, balanced or debt for short-term goals. Our <Link to="/sip-calculator" style={{ color: 'var(--da-primary)' }}>SIP Calculator</Link> can help you determine the right monthly amount for each goal.</p>
 
       <h2 style={h2}>Key Tips for SIP Success</h2>
       <ul style={{ ...s, paddingLeft: 24 }}>
@@ -44,9 +44,9 @@ export default function BlogSIP() {
         <li>Start early, even with a small amount. Time in the market beats timing the market</li>
       </ul>
 
-      <div style={{ marginTop: 32, padding: 24, background: 'var(--bg-card)', borderRadius: 'var(--radius)', border: '1px solid var(--gold)', textAlign: 'center' }}>
+      <div style={{ marginTop: 32, padding: 24, background: 'var(--bg-card)', borderRadius: 'var(--radius)', border: '1px solid var(--da-primary)', textAlign: 'center' }}>
         <p style={{ fontSize: 18, fontWeight: 600, color: 'var(--text)', marginBottom: 12 }}>Plan your SIP investments</p>
-        <Link to="/sip-calculator" style={{ display: 'inline-block', padding: '12px 32px', background: 'var(--gold)', color: '#000', borderRadius: 'var(--radius-sm)', fontWeight: 600, fontSize: 16 }}>Try our SIP Calculator →</Link>
+        <Link to="/sip-calculator" style={{ display: 'inline-block', padding: '12px 32px', background: 'var(--da-primary)', color: '#fff', borderRadius: 'var(--radius-sm)', fontWeight: 600, fontSize: 16 }}>Try our SIP Calculator →</Link>
       </div>
     </div>
   )

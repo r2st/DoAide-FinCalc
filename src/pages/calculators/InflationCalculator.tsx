@@ -26,7 +26,7 @@ export default function InflationCalculator() {
         <div>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12, marginBottom: 16 }}>
             <ResultCard label="Future Cost" value={formatIndianCurrency(result.futureCost)} color="#F56565" subtitle={formatCompact(result.futureCost)} />
-            <ResultCard label="Cost Increase" value={formatIndianCurrency(result.futureCost - cost)} color="#F0B429" />
+            <ResultCard label="Cost Increase" value={formatIndianCurrency(result.futureCost - cost)} color="#0D9488" />
           </div>
           <div style={{ height: 300 }}>
             <ResponsiveContainer>

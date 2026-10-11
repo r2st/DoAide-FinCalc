@@ -20,7 +20,7 @@ export const calculators: Calculator[] = [
     icon: '🏠',
     path: '/emi-calculator',
     keywords: ['emi', 'home loan', 'car loan', 'personal loan', 'mortgage', 'equated monthly installment'],
-    color: '#F0B429',
+    color: '#0D9488',
   },
   {
     id: 'sip-calculator',

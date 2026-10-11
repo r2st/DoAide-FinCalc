@@ -21,7 +21,7 @@ export default function BlogHomeLoan() {
       <p style={s}>A home loan is likely the largest financial commitment you'll ever make. On a ₹50 lakh loan at 8.5% for 20 years, you'll pay over ₹53 lakhs in interest alone — more than the principal! Here are 10 proven strategies to reduce that burden significantly.</p>
 
       <h2 style={h2}>1. Choose a Shorter Tenure</h2>
-      <p style={s}>A 15-year tenure instead of 20 years on a ₹50 lakh loan at 8.5% saves you approximately ₹15 lakhs in interest. Yes, the EMI is higher (₹49,234 vs ₹43,391), but the total savings are massive. Use our <Link to="/emi-calculator" style={{ color: 'var(--gold)' }}>EMI Calculator</Link> to find the sweet spot between affordable EMI and interest savings.</p>
+      <p style={s}>A 15-year tenure instead of 20 years on a ₹50 lakh loan at 8.5% saves you approximately ₹15 lakhs in interest. Yes, the EMI is higher (₹49,234 vs ₹43,391), but the total savings are massive. Use our <Link to="/emi-calculator" style={{ color: 'var(--da-primary)' }}>EMI Calculator</Link> to find the sweet spot between affordable EMI and interest savings.</p>
 
       <h2 style={h2}>2. Make Part-Prepayments</h2>
       <p style={s}>Even one extra EMI per year can reduce your loan tenure by 3-4 years. Direct your annual bonus, tax refunds, or any windfalls toward prepayment. RBI mandates that floating-rate loans have zero prepayment charges, so take advantage of this.</p>
@@ -45,16 +45,16 @@ export default function BlogHomeLoan() {
       <p style={s}>A joint home loan with a working spouse doubles the tax benefits — both can claim Section 24(b) and 80C deductions. Women co-borrowers may also get a 0.05% interest rate concession from some banks.</p>
 
       <h2 style={h2}>9. Check Your Home Loan Eligibility First</h2>
-      <p style={s}>Before house hunting, check your <Link to="/home-loan-eligibility-calculator" style={{ color: 'var(--gold)' }}>home loan eligibility</Link>. This prevents heartbreak from falling in love with a property you can't afford and gives you negotiating power with the seller.</p>
+      <p style={s}>Before house hunting, check your <Link to="/home-loan-eligibility-calculator" style={{ color: 'var(--da-primary)' }}>home loan eligibility</Link>. This prevents heartbreak from falling in love with a property you can't afford and gives you negotiating power with the seller.</p>
 
       <h2 style={h2}>10. Compare Total Cost, Not Just EMI</h2>
       <p style={s}>A lower EMI with a longer tenure might feel affordable, but the total cost could be much higher. Always compare the total amount payable (principal + interest) across different tenure options.</p>
 
-      <div style={{ marginTop: 32, padding: 24, background: 'var(--bg-card)', borderRadius: 'var(--radius)', border: '1px solid var(--gold)', textAlign: 'center' }}>
+      <div style={{ marginTop: 32, padding: 24, background: 'var(--bg-card)', borderRadius: 'var(--radius)', border: '1px solid var(--da-primary)', textAlign: 'center' }}>
         <p style={{ fontSize: 18, fontWeight: 600, color: 'var(--text)', marginBottom: 12 }}>Calculate your Home Loan EMI</p>
         <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-          <Link to="/emi-calculator" style={{ display: 'inline-block', padding: '12px 24px', background: 'var(--gold)', color: '#000', borderRadius: 'var(--radius-sm)', fontWeight: 600, fontSize: 15 }}>EMI Calculator →</Link>
-          <Link to="/home-loan-eligibility-calculator" style={{ display: 'inline-block', padding: '12px 24px', border: '1px solid var(--gold)', color: 'var(--gold)', borderRadius: 'var(--radius-sm)', fontWeight: 600, fontSize: 15 }}>Check Eligibility →</Link>
+          <Link to="/emi-calculator" style={{ display: 'inline-block', padding: '12px 24px', background: 'var(--da-primary)', color: '#fff', borderRadius: 'var(--radius-sm)', fontWeight: 600, fontSize: 15 }}>EMI Calculator →</Link>
+          <Link to="/home-loan-eligibility-calculator" style={{ display: 'inline-block', padding: '12px 24px', border: '1px solid var(--da-primary)', color: 'var(--da-primary)', borderRadius: 'var(--radius-sm)', fontWeight: 600, fontSize: 15 }}>Check Eligibility →</Link>
         </div>
       </div>
     </div>

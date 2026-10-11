@@ -27,7 +27,7 @@ export default function SWPCalculator() {
         </div>
         <div>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12, marginBottom: 16 }}>
-            <ResultCard label="Total Withdrawn" value={formatIndianCurrency(result.totalWithdrawn)} color="#F0B429" />
+            <ResultCard label="Total Withdrawn" value={formatIndianCurrency(result.totalWithdrawn)} color="#0D9488" />
             <ResultCard label="Final Balance" value={formatIndianCurrency(result.finalValue)} color="#48BB78" subtitle={formatCompact(result.finalValue)} />
           </div>
           <div style={{ height: 300 }}>
@@ -36,7 +36,7 @@ export default function SWPCalculator() {
                 <XAxis dataKey="year" stroke="#6b7280" fontSize={12} />
                 <YAxis stroke="#6b7280" fontSize={12} tickFormatter={(v) => formatCompact(v)} />
                 <Tooltip formatter={(v) => formatIndianCurrency(v as number)} contentStyle={{ background: '#111', border: '1px solid #333' }} />
-                <Line type="monotone" dataKey="balance" stroke="#F0B429" strokeWidth={2} dot={false} />
+                <Line type="monotone" dataKey="balance" stroke="#0D9488" strokeWidth={2} dot={false} />
               </LineChart>
             </ResponsiveContainer>
           </div>

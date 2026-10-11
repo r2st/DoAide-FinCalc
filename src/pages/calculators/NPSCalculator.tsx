@@ -28,7 +28,7 @@ export default function NPSCalculator() {
         </div>
         <div>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12, marginBottom: 16 }}>
-            <ResultCard label="Total Corpus" value={formatIndianCurrency(result.totalCorpus)} color="#F0B429" subtitle={formatCompact(result.totalCorpus)} />
+            <ResultCard label="Total Corpus" value={formatIndianCurrency(result.totalCorpus)} color="#0D9488" subtitle={formatCompact(result.totalCorpus)} />
             <ResultCard label="Total Invested" value={formatIndianCurrency(result.totalInvested)} color="#9F7AEA" />
             <ResultCard label="Pension Wealth (60%)" value={formatIndianCurrency(result.pensionWealth)} color="#48BB78" />
             <ResultCard label="Est. Monthly Pension" value={formatIndianCurrency(result.estimatedPension)} color="#F687B3" />
@@ -50,7 +50,7 @@ export default function NPSCalculator() {
                   <XAxis dataKey="age" stroke="#6b7280" fontSize={11} />
                   <YAxis stroke="#6b7280" fontSize={11} tickFormatter={(v) => formatCompact(v)} />
                   <Tooltip formatter={(v) => formatIndianCurrency(v as number)} contentStyle={{ background: '#111', border: '1px solid #333' }} />
-                  <Line type="monotone" dataKey="corpus" stroke="#F0B429" strokeWidth={2} dot={false} />
+                  <Line type="monotone" dataKey="corpus" stroke="#0D9488" strokeWidth={2} dot={false} />
                 </LineChart>
               </ResponsiveContainer>
             </div>

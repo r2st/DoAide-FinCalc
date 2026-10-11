@@ -24,9 +24,9 @@ export default function GSTCalculator() {
               {[5, 12, 18, 28].map((r) => (
                 <button key={r} onClick={() => setGstRate(r)} style={{
                   flex: 1, padding: '10px', borderRadius: 'var(--radius-sm)', fontSize: 15, fontWeight: 600,
-                  background: gstRate === r ? 'var(--gold)' : 'var(--bg-input)',
-                  color: gstRate === r ? '#000' : 'var(--text-muted)',
-                  border: `1px solid ${gstRate === r ? 'var(--gold)' : 'var(--border)'}`,
+                  background: gstRate === r ? 'var(--da-primary)' : 'var(--bg-input)',
+                  color: gstRate === r ? '#fff' : 'var(--text-muted)',
+                  border: `1px solid ${gstRate === r ? 'var(--da-primary)' : 'var(--border)'}`,
                 }}>{r}%</button>
               ))}
             </div>
@@ -37,9 +37,9 @@ export default function GSTCalculator() {
               {[false, true].map((inc) => (
                 <button key={String(inc)} onClick={() => setIsInclusive(inc)} style={{
                   flex: 1, padding: '10px', borderRadius: 'var(--radius-sm)', fontSize: 14, fontWeight: 500,
-                  background: isInclusive === inc ? 'var(--gold)' : 'var(--bg-input)',
-                  color: isInclusive === inc ? '#000' : 'var(--text-muted)',
-                  border: `1px solid ${isInclusive === inc ? 'var(--gold)' : 'var(--border)'}`,
+                  background: isInclusive === inc ? 'var(--da-primary)' : 'var(--bg-input)',
+                  color: isInclusive === inc ? '#fff' : 'var(--text-muted)',
+                  border: `1px solid ${isInclusive === inc ? 'var(--da-primary)' : 'var(--border)'}`,
                 }}>{inc ? 'GST Inclusive' : 'GST Exclusive'}</button>
               ))}
             </div>
@@ -48,13 +48,13 @@ export default function GSTCalculator() {
         <div>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
             <ResultCard label="Base Amount" value={formatIndianCurrency(result.baseAmount)} color="#9F7AEA" />
-            <ResultCard label="GST Amount" value={formatIndianCurrency(result.gstAmount)} color="#F0B429" />
+            <ResultCard label="GST Amount" value={formatIndianCurrency(result.gstAmount)} color="#0D9488" />
             <ResultCard label="CGST" value={formatIndianCurrency(result.cgst)} color="#4299E1" subtitle={`${gstRate / 2}%`} />
             <ResultCard label="SGST" value={formatIndianCurrency(result.sgst)} color="#48BB78" subtitle={`${gstRate / 2}%`} />
           </div>
-          <div style={{ marginTop: 16, padding: 20, background: 'var(--bg-card)', borderRadius: 'var(--radius)', border: '2px solid var(--gold)', textAlign: 'center' }}>
+          <div style={{ marginTop: 16, padding: 20, background: 'var(--bg-card)', borderRadius: 'var(--radius)', border: '2px solid var(--da-primary)', textAlign: 'center' }}>
             <div style={{ fontSize: 14, color: 'var(--text-muted)' }}>Total Amount</div>
-            <div style={{ fontSize: 32, fontWeight: 700, color: 'var(--gold)' }}>{formatIndianCurrency(result.totalAmount)}</div>
+            <div style={{ fontSize: 32, fontWeight: 700, color: 'var(--da-primary)' }}>{formatIndianCurrency(result.totalAmount)}</div>
           </div>
         </div>
       </div>

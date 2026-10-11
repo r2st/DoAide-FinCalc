@@ -31,9 +31,9 @@ export default function StampDutyCalculator() {
               {states.map((s) => (
                 <button key={s} onClick={() => setState(s.toLowerCase())} style={{
                   padding: '10px', borderRadius: 'var(--radius-sm)', fontSize: 14, fontWeight: 500,
-                  background: state === s.toLowerCase() ? 'var(--gold)' : 'var(--bg-input)',
-                  color: state === s.toLowerCase() ? '#000' : 'var(--text-muted)',
-                  border: `1px solid ${state === s.toLowerCase() ? 'var(--gold)' : 'var(--border)'}`,
+                  background: state === s.toLowerCase() ? 'var(--da-primary)' : 'var(--bg-input)',
+                  color: state === s.toLowerCase() ? '#fff' : 'var(--text-muted)',
+                  border: `1px solid ${state === s.toLowerCase() ? 'var(--da-primary)' : 'var(--border)'}`,
                 }}>{s}</button>
               ))}
             </div>
@@ -41,7 +41,7 @@ export default function StampDutyCalculator() {
         </div>
         <div>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12, marginBottom: 16 }}>
-            <ResultCard label={`Stamp Duty (${result.stampDutyRate}%)`} value={formatIndianCurrency(result.stampDuty)} color="#F0B429" />
+            <ResultCard label={`Stamp Duty (${result.stampDutyRate}%)`} value={formatIndianCurrency(result.stampDuty)} color="#0D9488" />
             <ResultCard label={`Registration (${result.registrationRate}%)`} value={formatIndianCurrency(result.registrationCharges)} color="#4299E1" />
             <ResultCard label="Total Cost" value={formatIndianCurrency(result.totalCost)} color="#48BB78" subtitle="Property + Stamp Duty + Registration" />
           </div>
@@ -49,7 +49,7 @@ export default function StampDutyCalculator() {
             <ResponsiveContainer>
               <PieChart>
                 <Pie data={pieData} cx="50%" cy="50%" innerRadius={60} outerRadius={95} dataKey="value" label={({ name, percent }: any) => `${name} ${((percent ?? 0) * 100).toFixed(1)}%`}>
-                  <Cell fill="#9F7AEA" /><Cell fill="#F0B429" /><Cell fill="#4299E1" />
+                  <Cell fill="#9F7AEA" /><Cell fill="#0D9488" /><Cell fill="#4299E1" />
                 </Pie>
                 <Tooltip formatter={(v) => formatIndianCurrency(v as number)} />
               </PieChart>

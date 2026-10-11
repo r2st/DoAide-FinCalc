@@ -22,11 +22,11 @@ export default function CAGRCalculator() {
           <SliderInput label="Time Period" value={years} onChange={setYears} min={1} max={30} step={1} suffix=" years" />
         </div>
         <div>
-          <ResultCard label="CAGR" value={formatPercent(result.cagr)} color="#F0B429" subtitle={`Your investment grew from ${formatIndianCurrency(initial)} to ${formatIndianCurrency(final_)} in ${years} years`} />
+          <ResultCard label="CAGR" value={formatPercent(result.cagr)} color="#0D9488" subtitle={`Your investment grew from ${formatIndianCurrency(initial)} to ${formatIndianCurrency(final_)} in ${years} years`} />
           <div style={{ marginTop: 16, padding: 16, background: 'var(--bg-card)', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border)' }}>
-            <h3 style={{ fontSize: 14, color: 'var(--gold)', marginBottom: 8 }}>Formula</h3>
+            <h3 style={{ fontSize: 14, color: 'var(--da-primary)', marginBottom: 8 }}>Formula</h3>
             <p style={{ fontSize: 14, color: 'var(--text-muted)' }}>CAGR = (Final Value / Initial Value)^(1/n) - 1</p>
-            <p style={{ fontSize: 14, color: 'var(--text-muted)', marginTop: 8 }}>= ({formatIndianCurrency(final_)} / {formatIndianCurrency(initial)})^(1/{years}) - 1 = <strong style={{ color: 'var(--gold)' }}>{formatPercent(result.cagr)}</strong></p>
+            <p style={{ fontSize: 14, color: 'var(--text-muted)', marginTop: 8 }}>= ({formatIndianCurrency(final_)} / {formatIndianCurrency(initial)})^(1/{years}) - 1 = <strong style={{ color: 'var(--da-primary)' }}>{formatPercent(result.cagr)}</strong></p>
           </div>
         </div>
       </div>

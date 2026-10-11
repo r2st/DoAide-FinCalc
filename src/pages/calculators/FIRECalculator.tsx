@@ -31,7 +31,7 @@ export default function FIRECalculator() {
         </div>
         <div>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12, marginBottom: 16 }}>
-            <ResultCard label="FIRE Number" value={formatIndianCurrency(result.fireNumber)} color="#F0B429" subtitle={formatCompact(result.fireNumber)} />
+            <ResultCard label="FIRE Number" value={formatIndianCurrency(result.fireNumber)} color="#0D9488" subtitle={formatCompact(result.fireNumber)} />
             <ResultCard label="Years to FIRE" value={result.yearsToFire > 0 ? `${result.yearsToFire} years` : 'Not achievable'} color={result.yearsToFire > 0 ? '#48BB78' : '#F56565'} />
           </div>
           <div style={{ height: 300 }}>
@@ -41,7 +41,7 @@ export default function FIRECalculator() {
                 <YAxis stroke="#6b7280" fontSize={12} tickFormatter={(v) => formatCompact(v)} />
                 <Tooltip formatter={(v) => formatIndianCurrency(v as number)} contentStyle={{ background: '#111', border: '1px solid #333' }} />
                 <Legend />
-                <Line type="monotone" dataKey="corpus" name="Corpus" stroke="#F0B429" strokeWidth={2} dot={false} />
+                <Line type="monotone" dataKey="corpus" name="Corpus" stroke="#0D9488" strokeWidth={2} dot={false} />
                 <Line type="monotone" dataKey="targetExpenses" name="FIRE Target" stroke="#F56565" strokeWidth={2} dot={false} strokeDasharray="5 5" />
                 {result.yearsToFire > 0 && <ReferenceLine x={result.yearsToFire} stroke="#48BB78" strokeDasharray="3 3" label={{ value: 'FIRE!', position: 'top', fill: '#48BB78' }} />}
               </LineChart>

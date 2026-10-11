@@ -27,7 +27,7 @@ export default function LumpsumCalculator() {
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12, marginBottom: 16 }}>
             <ResultCard label="Invested Amount" value={formatIndianCurrency(result.investedAmount)} color="#9F7AEA" />
             <ResultCard label="Estimated Returns" value={formatIndianCurrency(result.estimatedReturns)} color="#48BB78" />
-            <ResultCard label="Total Value" value={formatIndianCurrency(result.totalValue)} color="#F0B429" subtitle={formatCompact(result.totalValue)} />
+            <ResultCard label="Total Value" value={formatIndianCurrency(result.totalValue)} color="#0D9488" subtitle={formatCompact(result.totalValue)} />
           </div>
           <div style={{ height: 300 }}>
             <ResponsiveContainer>

@@ -19,7 +19,7 @@ export default function GratuityCalculator() {
           <SliderInput label="Last Drawn Salary (Basic + DA)" value={salary} onChange={setSalary} min={5000} max={500000} step={1000} prefix="₹" />
           <SliderInput label="Years of Service" value={years} onChange={setYears} min={5} max={40} step={1} suffix=" years" />
           <div style={{ padding: 16, background: 'var(--bg-card)', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border)', marginTop: 16 }}>
-            <h3 style={{ fontSize: 14, color: 'var(--gold)', marginBottom: 8 }}>Gratuity Formula</h3>
+            <h3 style={{ fontSize: 14, color: 'var(--da-primary)', marginBottom: 8 }}>Gratuity Formula</h3>
             <p style={{ fontSize: 13, color: 'var(--text-dim)', lineHeight: 1.6 }}>
               Gratuity = (15 &times; Last Drawn Salary &times; Years of Service) / 26<br />
               Applicable for employees who have completed 5+ years of service under the Payment of Gratuity Act, 1972.
@@ -27,11 +27,11 @@ export default function GratuityCalculator() {
           </div>
         </div>
         <div>
-          <ResultCard label="Gratuity Amount" value={formatIndianCurrency(result.gratuityAmount)} color="#F0B429" subtitle="Tax-free up to ₹20,00,000" />
+          <ResultCard label="Gratuity Amount" value={formatIndianCurrency(result.gratuityAmount)} color="#0D9488" subtitle="Tax-free up to ₹20,00,000" />
           <div style={{ marginTop: 16, padding: 16, background: 'var(--bg-card)', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border)' }}>
             <div style={{ fontSize: 13, color: 'var(--text-dim)', marginBottom: 8 }}>Calculation Breakdown</div>
             <div style={{ fontSize: 15, color: 'var(--text-muted)' }}>
-              (15 &times; {formatIndianCurrency(salary)} &times; {years}) / 26 = <strong style={{ color: 'var(--gold)' }}>{formatIndianCurrency(result.gratuityAmount)}</strong>
+              (15 &times; {formatIndianCurrency(salary)} &times; {years}) / 26 = <strong style={{ color: 'var(--da-primary)' }}>{formatIndianCurrency(result.gratuityAmount)}</strong>
             </div>
           </div>
         </div>

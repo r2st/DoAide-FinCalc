@@ -25,7 +25,7 @@ export default function RDCalculator() {
         </div>
         <div>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12, marginBottom: 16 }}>
-            <ResultCard label="Maturity Amount" value={formatIndianCurrency(result.maturityAmount)} color="#F0B429" />
+            <ResultCard label="Maturity Amount" value={formatIndianCurrency(result.maturityAmount)} color="#0D9488" />
             <ResultCard label="Total Deposited" value={formatIndianCurrency(result.totalDeposited)} color="#9F7AEA" />
             <ResultCard label="Total Interest" value={formatIndianCurrency(result.totalInterest)} color="#48BB78" />
           </div>

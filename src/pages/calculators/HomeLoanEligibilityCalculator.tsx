@@ -27,7 +27,7 @@ export default function HomeLoanEligibilityCalculator() {
         </div>
         <div>
           <div style={{ display: 'grid', gap: 12 }}>
-            <ResultCard label="Eligible EMI" value={formatIndianCurrency(result.eligibleEMI)} color="#F0B429" subtitle="Maximum EMI you can afford" />
+            <ResultCard label="Eligible EMI" value={formatIndianCurrency(result.eligibleEMI)} color="#0D9488" subtitle="Maximum EMI you can afford" />
             <ResultCard label="Eligible Loan Amount" value={formatIndianCurrency(result.eligibleLoanAmount)} color="#48BB78" subtitle={formatCompact(result.eligibleLoanAmount)} />
             <ResultCard label="Max Property Value" value={formatIndianCurrency(result.maxPropertyValue)} color="#9F7AEA" subtitle="Assuming 80% LTV ratio" />
           </div>

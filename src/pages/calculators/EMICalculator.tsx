@@ -18,7 +18,7 @@ export default function EMICalculator() {
     { name: 'Principal', value: principal },
     { name: 'Interest', value: result.totalInterest },
   ]
-  const COLORS = ['#F0B429', '#4299E1']
+  const COLORS = ['#0D9488', '#4299E1']
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -46,7 +46,7 @@ export default function EMICalculator() {
         </div>
         <div className="calc-results">
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12, marginBottom: 16 }}>
-            <ResultCard label="Monthly EMI" value={formatIndianCurrency(result.emi)} color="#F0B429" />
+            <ResultCard label="Monthly EMI" value={formatIndianCurrency(result.emi)} color="#0D9488" />
             <ResultCard label="Total Interest" value={formatIndianCurrency(result.totalInterest)} color="#4299E1" />
             <ResultCard label="Total Payment" value={formatIndianCurrency(result.totalPayment)} color="#48BB78" />
             <ResultCard label="Principal" value={formatIndianCurrency(principal)} color="#9F7AEA" />

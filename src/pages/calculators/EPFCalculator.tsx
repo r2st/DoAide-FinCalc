@@ -30,7 +30,7 @@ export default function EPFCalculator() {
         </div>
         <div>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12, marginBottom: 16 }}>
-            <ResultCard label="Total Corpus" value={formatIndianCurrency(result.totalBalance)} color="#F0B429" subtitle={formatCompact(result.totalBalance)} />
+            <ResultCard label="Total Corpus" value={formatIndianCurrency(result.totalBalance)} color="#0D9488" subtitle={formatCompact(result.totalBalance)} />
             <ResultCard label="Employee Contribution" value={formatIndianCurrency(result.employeeTotal)} color="#9F7AEA" />
             <ResultCard label="Employer Contribution" value={formatIndianCurrency(result.employerTotal)} color="#4299E1" />
             <ResultCard label="Interest Earned" value={formatIndianCurrency(result.interestEarned)} color="#48BB78" />
@@ -41,7 +41,7 @@ export default function EPFCalculator() {
                 <XAxis dataKey="year" stroke="#6b7280" fontSize={12} />
                 <YAxis stroke="#6b7280" fontSize={12} tickFormatter={(v) => formatCompact(v)} />
                 <Tooltip formatter={(v) => formatIndianCurrency(v as number)} contentStyle={{ background: '#111', border: '1px solid #333' }} />
-                <Line type="monotone" dataKey="balance" stroke="#F0B429" strokeWidth={2} dot={false} name="Balance" />
+                <Line type="monotone" dataKey="balance" stroke="#0D9488" strokeWidth={2} dot={false} name="Balance" />
               </LineChart>
             </ResponsiveContainer>
           </div>

@@ -30,9 +30,9 @@ export default function HRACalculator() {
                 {[true, false].map((metro) => (
                   <button key={String(metro)} onClick={() => setIsMetro(metro)} style={{
                     padding: '8px 20px', borderRadius: 'var(--radius-sm)', fontSize: 14, fontWeight: 500,
-                    background: isMetro === metro ? 'var(--gold)' : 'var(--bg-input)',
-                    color: isMetro === metro ? '#000' : 'var(--text-muted)',
-                    border: `1px solid ${isMetro === metro ? 'var(--gold)' : 'var(--border)'}`,
+                    background: isMetro === metro ? 'var(--da-primary)' : 'var(--bg-input)',
+                    color: isMetro === metro ? '#fff' : 'var(--text-muted)',
+                    border: `1px solid ${isMetro === metro ? 'var(--da-primary)' : 'var(--border)'}`,
                   }}>{metro ? 'Metro' : 'Non-Metro'}</button>
                 ))}
               </div>
@@ -55,12 +55,12 @@ export default function HRACalculator() {
             </ResponsiveContainer>
           </div>
           <div style={{ padding: 16, background: 'var(--bg-card)', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border)', marginTop: 16 }}>
-            <h3 style={{ fontSize: 14, color: 'var(--gold)', marginBottom: 12 }}>Three Rules (Annual)</h3>
+            <h3 style={{ fontSize: 14, color: 'var(--da-primary)', marginBottom: 12 }}>Three Rules (Annual)</h3>
             <div style={{ display: 'grid', gap: 8, fontSize: 14, color: 'var(--text-muted)' }}>
               <div>1. Actual HRA received: <strong>{formatIndianCurrency(result.rule1)}</strong></div>
               <div>2. Rent - 10% of Basic: <strong>{formatIndianCurrency(result.rule2)}</strong></div>
               <div>3. {isMetro ? '50%' : '40%'} of Basic: <strong>{formatIndianCurrency(result.rule3)}</strong></div>
-              <div style={{ color: 'var(--gold)', fontWeight: 600 }}>Minimum of above = {formatIndianCurrency(result.exemptedHRA)}</div>
+              <div style={{ color: 'var(--da-primary)', fontWeight: 600 }}>Minimum of above = {formatIndianCurrency(result.exemptedHRA)}</div>
             </div>
           </div>
         </div>

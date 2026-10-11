@@ -15,13 +15,13 @@ export default function SliderInput({ label, value, onChange, min, max, step = 1
   return (
     <div style={{ marginBottom: 20 }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 8 }}>
-        <label style={{ fontSize: 14, color: 'var(--text-muted)', fontWeight: 500 }}>{label}</label>
+        <label style={{ fontSize: 14, color: 'var(--da-text-muted)', fontWeight: 500 }}>{label}</label>
         <div style={{
           display: 'flex', alignItems: 'center', gap: 4,
-          background: 'var(--bg-input)', border: '1px solid var(--border)',
-          borderRadius: 'var(--radius-sm)', padding: '4px 10px',
+          background: 'var(--da-bg-input)', border: '1px solid var(--da-border)',
+          borderRadius: 'var(--da-radius-sm)', padding: '4px 10px',
         }}>
-          {prefix && <span style={{ color: 'var(--gold)', fontSize: 14, fontWeight: 600 }}>{prefix}</span>}
+          {prefix && <span style={{ color: 'var(--da-primary)', fontSize: 14, fontWeight: 600 }}>{prefix}</span>}
           <input
             type="number"
             value={value}
@@ -30,12 +30,12 @@ export default function SliderInput({ label, value, onChange, min, max, step = 1
             max={max}
             step={step}
             style={{
-              background: 'transparent', border: 'none', color: 'var(--text)',
+              background: 'transparent', border: 'none', color: 'var(--da-text)',
               fontSize: 15, fontWeight: 600, width: Math.max(80, formatNumber(value).length * 10),
               textAlign: 'right', padding: 0,
             }}
           />
-          {suffix && <span style={{ color: 'var(--text-muted)', fontSize: 13 }}>{suffix}</span>}
+          {suffix && <span style={{ color: 'var(--da-text-muted)', fontSize: 13 }}>{suffix}</span>}
         </div>
       </div>
       <input
@@ -47,8 +47,8 @@ export default function SliderInput({ label, value, onChange, min, max, step = 1
         step={step}
       />
       <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: 4 }}>
-        <span style={{ fontSize: 11, color: 'var(--text-dim)' }}>{prefix}{formatNumber(min)}{suffix}</span>
-        <span style={{ fontSize: 11, color: 'var(--text-dim)' }}>{prefix}{formatNumber(max)}{suffix}</span>
+        <span style={{ fontSize: 11, color: 'var(--da-text-dim)' }}>{prefix}{formatNumber(min)}{suffix}</span>
+        <span style={{ fontSize: 11, color: 'var(--da-text-dim)' }}>{prefix}{formatNumber(max)}{suffix}</span>
       </div>
     </div>
   )

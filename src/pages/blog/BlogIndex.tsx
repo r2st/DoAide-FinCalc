@@ -39,13 +39,13 @@ export default function BlogIndex() {
             borderRadius: 'var(--radius)', transition: 'border-color 0.2s',
             textDecoration: 'none',
           }}
-          onMouseEnter={(e) => e.currentTarget.style.borderColor = 'var(--gold)'}
+          onMouseEnter={(e) => e.currentTarget.style.borderColor = 'var(--da-primary)'}
           onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border)'}
           >
             <div style={{ fontSize: 13, color: 'var(--text-dim)', marginBottom: 8 }}>{post.date} &middot; {post.readTime}</div>
             <h2 style={{ fontSize: 22, fontWeight: 600, color: 'var(--text)', marginBottom: 8 }}>{post.title}</h2>
             <p style={{ fontSize: 15, color: 'var(--text-muted)', lineHeight: 1.6 }}>{post.excerpt}</p>
-            <span style={{ display: 'inline-block', marginTop: 12, fontSize: 14, color: 'var(--gold)', fontWeight: 500 }}>Read more →</span>
+            <span style={{ display: 'inline-block', marginTop: 12, fontSize: 14, color: 'var(--da-primary)', fontWeight: 500 }}>Read more →</span>
           </Link>
         ))}
       </div>

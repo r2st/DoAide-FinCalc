@@ -14,8 +14,8 @@ export default function ShareButtons({ title, text, url }: Props) {
 
   const btnStyle: React.CSSProperties = {
     display: 'inline-flex', alignItems: 'center', gap: 8,
-    padding: '10px 20px', border: '1px solid var(--gold)',
-    borderRadius: 'var(--radius-sm)', color: 'var(--gold)',
+    padding: '10px 20px', border: '1px solid var(--da-primary)',
+    borderRadius: 'var(--da-radius-sm)', color: 'var(--da-primary)',
     fontSize: 14, fontWeight: 500, transition: 'all 0.2s',
   }
 

@@ -34,7 +34,7 @@ export default function RentVsBuyCalculator() {
         <div>
           <div style={{ padding: 20, background: 'var(--bg-card)', borderRadius: 'var(--radius)', border: '1px solid var(--border)', marginBottom: 16, textAlign: 'center' }}>
             <div style={{ fontSize: 14, color: 'var(--text-muted)', marginBottom: 8 }}>Recommendation</div>
-            <div style={{ fontSize: 18, fontWeight: 700, color: 'var(--gold)' }}>{result.recommendation}</div>
+            <div style={{ fontSize: 18, fontWeight: 700, color: 'var(--da-primary)' }}>{result.recommendation}</div>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12, marginBottom: 16 }}>
             <ResultCard label="Net Buy Cost" value={formatIndianCurrency(Math.abs(result.buyCost))} color={result.buyCost < result.rentCost ? '#48BB78' : '#F56565'} subtitle={result.buyCost < 0 ? 'Net gain' : 'Net cost'} />

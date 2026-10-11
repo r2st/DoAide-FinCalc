@@ -22,13 +22,13 @@ export default function PPFCalculator() {
           <SliderInput label="Time Period" value={years} onChange={setYears} min={15} max={50} step={5} suffix=" years" />
           <div style={{ padding: 16, background: 'var(--bg-card)', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border)', marginTop: 8 }}>
             <div style={{ fontSize: 13, color: 'var(--text-dim)' }}>Current PPF Rate</div>
-            <div style={{ fontSize: 24, fontWeight: 700, color: 'var(--gold)' }}>7.1% p.a.</div>
+            <div style={{ fontSize: 24, fontWeight: 700, color: 'var(--da-primary)' }}>7.1% p.a.</div>
             <div style={{ fontSize: 12, color: 'var(--text-dim)', marginTop: 4 }}>Compounded yearly. Tax-free under Section 80C.</div>
           </div>
         </div>
         <div>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12, marginBottom: 16 }}>
-            <ResultCard label="Maturity Amount" value={formatIndianCurrency(result.maturityAmount)} color="#F0B429" subtitle={formatCompact(result.maturityAmount)} />
+            <ResultCard label="Maturity Amount" value={formatIndianCurrency(result.maturityAmount)} color="#0D9488" subtitle={formatCompact(result.maturityAmount)} />
             <ResultCard label="Total Deposited" value={formatIndianCurrency(result.totalDeposited)} color="#9F7AEA" />
             <ResultCard label="Total Interest" value={formatIndianCurrency(result.totalInterest)} color="#48BB78" />
           </div>

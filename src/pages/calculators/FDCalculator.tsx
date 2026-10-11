@@ -26,14 +26,14 @@ export default function FDCalculator() {
         </div>
         <div>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12, marginBottom: 16 }}>
-            <ResultCard label="Maturity Amount" value={formatIndianCurrency(result.maturityAmount)} color="#F0B429" />
+            <ResultCard label="Maturity Amount" value={formatIndianCurrency(result.maturityAmount)} color="#0D9488" />
             <ResultCard label="Total Interest" value={formatIndianCurrency(result.totalInterest)} color="#48BB78" />
           </div>
           <div style={{ height: 250 }}>
             <ResponsiveContainer>
               <PieChart>
                 <Pie data={pieData} cx="50%" cy="50%" innerRadius={60} outerRadius={100} dataKey="value" label={({ name, percent }: any) => `${name} ${((percent ?? 0) * 100).toFixed(0)}%`}>
-                  <Cell fill="#F0B429" /><Cell fill="#48BB78" />
+                  <Cell fill="#0D9488" /><Cell fill="#48BB78" />
                 </Pie>
                 <Tooltip formatter={(v) => formatIndianCurrency(v as number)} />
               </PieChart>
