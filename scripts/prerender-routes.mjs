@@ -121,5 +121,8 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
     writeFileSync(file, withRoute(shell, route))
   }
   writeFileSync(join(dist, 'sitemap.xml'), sitemap())
+  // serve.json lists routes explicitly (a ** rewrite is re-applied to their
+  // targets and swallows them), so unknown paths get the SPA with a 404 status.
+  writeFileSync(join(dist, '404.html'), shell)
   console.log(`prerendered ${ROUTES.length} route heads + sitemap.xml`)
 }
